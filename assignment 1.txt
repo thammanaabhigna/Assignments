@@ -1,0 +1,165 @@
+Assignment 1
+
+print multiplication table of given number:
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace multiplication_table
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            int num, product;
+          
+            Console.Write("Enter the number to print its multiplication table : ");
+            num = Convert.ToInt32(Console.ReadLine());
+            Console.Write("\nMultiplication Table for {0} : ", num);
+            for(int i = 1;i<=10;i++)
+            {
+                product = num * i;
+                Console.Write("{0} x{1} ={2}\n", num,i,product);
+            }
+            Console.ReadKey();
+        }
+    }
+}
+
+to print if the given string is palindrome or not:
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace palindrome
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter a string to Check Palindrome : ");
+
+            string name = Console.ReadLine();
+            string reverse = string.Empty;
+
+            for (int i = name.Length - 1; i >= 0; i--)
+            {
+                reverse += name[i];
+            }
+
+            if (name == reverse)
+            {
+                Console.WriteLine($"{name} is Palindrome.");
+            }
+            else
+            {
+                Console.WriteLine($"{name} is not Palindrome");
+            }
+            Console.ReadKey();
+        }
+    }
+}
+
+
+
+
+program to take a integer as input
+   Print the sum of digits of the number:
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SumofDigits
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+           
+                int num, sum = 0, r;
+
+                Console.WriteLine("Enter a Number : ");
+                num = int.Parse(Console.ReadLine());
+
+                while (num != 0)
+                {
+                    r = num % 10;
+                    num = num / 10;
+                    sum = sum + r;
+                }
+
+                Console.WriteLine("The sum of the digits in the number: " + sum);
+                Console.ReadLine();
+            
+        }
+    }
+}
+
+
+program to remove duplicate elements from the array of integers.
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace removeduplicateele
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] arr = new int[100];
+            int num;//total num of elements in the array
+            int i, j, k;
+            //read size of the array
+            Console.WriteLine("Enter the size of the array: ");
+            num = Convert.ToInt32(Console.ReadLine());
+            //reads elements in array
+            Console.WriteLine("Enter the elements in the array: ");
+            for(i=0;i<num;i++)
+            {
+                arr[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            //finding all the duplicate elements in an array
+            for(i=0;i<num;i++)
+            {
+                for(j=i+1;j<num;j++)
+                {
+                    //if any duplicate elements found*/
+                    if(arr[i]==arr[j])
+                    {
+                        //delete the current duplicate element
+                     for(k=j;k<num;k++)
+                        {
+                            arr[k] = arr[k + 1];
+
+                        }
+                        //decrement size after removing duplicate elements
+                        num--;
+                        //if shifting of elements occur dont increment j
+                        j--;
+                    }
+                }
+            }
+            //print array after deleting duplicate elements
+            Console.WriteLine("\narray elements after deleting duplicates : ");
+            for(i=0; i <num;i++)
+            {
+                Console.WriteLine(arr[i]);
+            }
+            Console.ReadLine();
+        }
+    }
+}
