@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace first10naturalnumbersrevorder
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+                int i, num=10;
+
+                
+               
+
+                /*Running loop from the number entered by user,
+                  and Decrementing by 1*/
+                for (i = num; i >= 1; i--)
+                {
+                    Console.WriteLine("\n" + i);
+                }
+
+                Console.ReadLine();
+            }
+        }
+    }
+ 

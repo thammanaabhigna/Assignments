@@ -1,0 +1,55 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace removeduplicateele
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] arr = new int[100];
+            int num;//total num of elements in the array
+            int i, j, k;
+            //read size of the array
+            Console.WriteLine("Enter the size of the array: ");
+            num = Convert.ToInt32(Console.ReadLine());
+            //reads elements in array
+            Console.WriteLine("Enter the elements in the array: ");
+            for(i=0;i<num;i++)
+            {
+                arr[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            //finding all the duplicate elements in an array
+            for(i=0;i<num;i++)
+            {
+                for(j=i+1;j<num;j++)
+                {
+                    //if any duplicate elements found*/
+                    if(arr[i]==arr[j])
+                    {
+                        //delete the current duplicate element
+                     for(k=j;k<num;k++)
+                        {
+                            arr[k] = arr[k + 1];
+
+                        }
+                        //decrement size after removing duplicate elements
+                        num--;
+                        //if shifting of elements occur dont increment j
+                        j--;
+                    }
+                }
+            }
+            //print array after deleting duplicate elements
+            Console.WriteLine("\narray elements after deleting duplicates : ");
+            for(i=0; i <num;i++)
+            {
+                Console.WriteLine(arr[i]);
+            }
+            Console.ReadLine();
+        }
+    }
+}
