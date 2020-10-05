@@ -1,0 +1,52 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace stack
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Stack<int> MyStack = new Stack<int>();//created an object of stack
+            MyStack.Push(2);//push method takes one parameter/argument.As datatype is string it is written in double quts.
+            MyStack.Push(4);
+            MyStack.Push(6);
+            MyStack.Push(8);
+            MyStack.Push(10);
+            MyStack.Push(12);
+            MyStack.Push(14);
+            MyStack.Push(16);
+            MyStack.Push(18);
+            MyStack.Push(20);
+            foreach (int stack in MyStack)
+            {
+                Console.WriteLine("The elements of MyStack are : " + stack);
+            }
+               
+               
+            
+            Console.WriteLine("the peek elements of stack is : " + MyStack.Peek());//to find peek of mystack
+            Console.WriteLine("the elements after applying pop:" + MyStack.Pop());
+            Console.WriteLine("the elements after applying pop:" + MyStack.Pop());
+            Console.WriteLine("the elements after applying pop:" + MyStack.Pop());
+            Console.WriteLine("the elements after applying pop:" + MyStack.Pop());
+            Console.WriteLine("the elements after applying pop:" + MyStack.Pop());
+            Console.WriteLine("the elements after applying pop:" + MyStack.Pop());
+            Console.WriteLine("the peek elements of stack is : " + MyStack.Peek());
+            Console.WriteLine("the elements after applying pop:" + MyStack.Pop());
+            //Console.WriteLine("the elements after applying pop:" + MyStack.Pop());
+            //Console.WriteLine("the elements after applying pop:" + MyStack.Pop());
+            //Console.WriteLine("the elements after applying pop:" + MyStack.Pop());
+            //Console.WriteLine("the elements after applying pop:" + MyStack.Pop());
+            //Console.WriteLine("the peek elements of stack is : " + MyStack.Peek());
+
+
+            Console.ReadLine();
+               
+            }
+        }
+    }
+
