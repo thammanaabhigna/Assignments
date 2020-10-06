@@ -1,0 +1,351 @@
+===================================================================QUEUE EXAMPLE===================================================================================
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Queue
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Queue<int> MyQueue = new Queue<int>();//created an object of queue
+            MyQueue.Enqueue(2);//enqueue method takes one parameter/argument.
+            MyQueue.Enqueue(4);
+            MyQueue.Enqueue(6);
+            MyQueue.Enqueue(8);
+            MyQueue.Enqueue(10);
+            MyQueue.Enqueue(12);
+            MyQueue.Enqueue(14);
+            MyQueue.Enqueue(16);
+            MyQueue.Enqueue(18);
+            MyQueue.Enqueue(20);
+            foreach (int Queue in MyQueue)
+            {
+                Console.WriteLine("The elements of MyQueue are : " + Queue);
+            }
+
+
+
+            Console.WriteLine("the peek elements of Queue is : " + MyQueue.Peek());//to find peek of myqueue
+            Console.WriteLine("the elements after applying dequeue:" + MyQueue.Dequeue());//dequeue method for 6 times
+            Console.WriteLine("the elements after applying dequeue:" + MyQueue.Dequeue());
+            Console.WriteLine("the elements after applying dequeue:" + MyQueue.Dequeue());
+            Console.WriteLine("the elements after applying dequeue:" + MyQueue.Dequeue());
+            Console.WriteLine("the elements after applying dequeue:" + MyQueue.Dequeue());
+            Console.WriteLine("the elements after applying dequeue:" + MyQueue.Dequeue());
+            Console.WriteLine("the peek elements of Queue is : " + MyQueue.Peek());//to find peek after 6 dequeue methods
+            Console.WriteLine("the elements after applying dequeue:" + MyQueue.Dequeue());//dequeue method for 5 times
+            Console.WriteLine("the elements after applying dequeue:" + MyQueue.Dequeue());
+            Console.WriteLine("the elements after applying dequeue:" + MyQueue.Dequeue());
+            Console.WriteLine("the elements after applying dequeue:" + MyQueue.Dequeue());//queue became empty
+            MyQueue.Enqueue(2);//enqueue few elements again
+            MyQueue.Enqueue(4);
+
+            MyQueue.Enqueue(6);
+
+            MyQueue.Enqueue(8);
+
+            MyQueue.Enqueue(10);
+
+            MyQueue.Enqueue(12);
+            MyQueue.Enqueue(14);
+            MyQueue.Enqueue(16);
+            MyQueue.Enqueue(18);
+            MyQueue.Enqueue(20);
+            Console.WriteLine("the elements after applying dequeue:" + MyQueue.Dequeue());
+            Console.WriteLine("the peek elements of Queue is : " + MyQueue.Peek());//peek method after 5 dequeue methods
+            Console.WriteLine("the elements after applying dequeue:" + MyQueue.Dequeue());//4 dequeue methods
+            Console.WriteLine("the elements after applying dequeue:" + MyQueue.Dequeue());
+            Console.WriteLine("the elements after applying dequeue:" + MyQueue.Dequeue());
+
+            Console.WriteLine("the elements after applying dequeue:" + MyQueue.Dequeue());
+            Console.WriteLine("the peek elements of Queue is : " + MyQueue.Peek());//peek method after 4dequeue methods
+            Console.WriteLine("the elements after applying dequeue:" + MyQueue.Dequeue());//3 dequeue methods
+            Console.WriteLine("the elements after applying dequeue:" + MyQueue.Dequeue());
+            Console.WriteLine("the elements after applying dequeue:" + MyQueue.Dequeue());
+            Console.WriteLine("the peek elements of Queue is : " + MyQueue.Peek());//peek after 3 dequeue methods
+            Console.WriteLine("the elements after applying dequeue:" + MyQueue.Dequeue());//2 dequeue methods
+
+            Console.WriteLine("the elements after applying dequeue:" + MyQueue.Dequeue());//queue is empty.so add elements
+            MyQueue.Enqueue(2);
+            MyQueue.Enqueue(4);
+
+
+
+
+
+
+
+
+
+
+            Console.WriteLine("the peek elements of Queue is : " + MyQueue.Peek());
+
+
+            Console.ReadLine();
+
+        }
+    }
+}
+
+======================================================================STACK EXAMPLE==============================================================================
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace stack1
+{
+    class stack
+    {
+        static void Main(string[] args)
+        {
+            Stack<int> MyStack = new Stack<int>();
+            MyStack.Push(2);
+            MyStack.Push(4);
+            MyStack.Push(6);
+            MyStack.Push(8);
+            MyStack.Push(10);
+            MyStack.Push(12);
+            MyStack.Push(14);
+            MyStack.Push(16);
+            MyStack.Push(18);
+            MyStack.Push(20);
+            Console.WriteLine("the topmost element of the stack is {0} ", MyStack.Peek());
+
+            foreach (int x in MyStack)
+            {
+                Console.WriteLine("elements are in stack are" + x);
+
+
+            }
+            Console.WriteLine("Removing 6 pop oprations");
+            Console.WriteLine("the elements after popping" + MyStack.Pop()); 
+            Console.WriteLine("the elements after popping" + MyStack.Pop());
+            Console.WriteLine("the elements after popping" + MyStack.Pop());
+            Console.WriteLine("the elements after popping" + MyStack.Pop());
+            Console.WriteLine("the elements after popping" + MyStack.Pop());
+            Console.WriteLine("the elements after popping" + MyStack.Pop());
+            Console.WriteLine("after 6 pop oprations");
+            Console.WriteLine("the top ele of stack is{0}" + MyStack.Peek());
+            foreach (int x in MyStack)
+            {
+                Console.WriteLine("elements are in stack are" + x);
+
+
+            }
+            Console.WriteLine("pushing here!!!!!");
+            MyStack.Push(1);
+            Console.WriteLine("removing 5 elements");
+            Console.WriteLine("the elements after popping" + MyStack.Pop());
+            Console.WriteLine("the elements after popping" + MyStack.Pop());
+            Console.WriteLine("the elements after popping" + MyStack.Pop());
+            Console.WriteLine("the elements after popping" + MyStack.Pop());
+            Console.WriteLine("the elements after popping" + MyStack.Pop());
+            foreach (int x in MyStack)
+            {
+                Console.WriteLine("elements are in stack are" + x);
+
+
+            }
+            Console.WriteLine("pushing here!!!!!");
+            MyStack.Push(14);
+            MyStack.Push(16);
+            MyStack.Push(18);
+            MyStack.Push(20);
+            MyStack.Push(1);
+            Console.WriteLine("removing 4 elements");
+            Console.WriteLine("the elements after popping" + MyStack.Pop());
+            Console.WriteLine("the elements after popping" + MyStack.Pop());
+            Console.WriteLine("the elements after popping" + MyStack.Pop());
+            Console.WriteLine("the elements after popping" + MyStack.Pop());
+            Console.WriteLine("pushing here!!!!!");
+            MyStack.Push(14);
+            MyStack.Push(16);
+            MyStack.Push(18);
+            Console.WriteLine("removing 3 elements");
+            Console.WriteLine("the elements after popping" + MyStack.Pop());
+            Console.WriteLine("the elements after popping" + MyStack.Pop());
+            Console.WriteLine("the elements after popping" + MyStack.Pop());
+            Console.WriteLine("pushing here!!!!!");
+            MyStack.Push(14);
+            MyStack.Push(16);
+            Console.WriteLine("removing 4 elements");
+            Console.WriteLine("the elements after popping" + MyStack.Pop());
+            Console.WriteLine("the elements after popping" + MyStack.Pop());
+            foreach (int x in MyStack)
+            {
+                Console.WriteLine("elements are in stack are" + x);
+
+
+            }
+
+            // Console.WriteLine(MyStack.Contains(2));
+            Console.ReadKey();
+
+        }
+    }
+}
+
+
+==============================================================LIST===========================================================================
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace list2
+{
+    class lists
+    {
+        static void Main(string[] args)
+        {
+            var user = new List<int>();
+            user.Add(1);
+            user.Add(2);
+            user.Add(3);
+            user.Add(4);
+            foreach(var x in user)
+            {
+                Console.WriteLine("the elements are::" + x);
+            }
+            //Accessing Elements are using Index
+            Console.WriteLine("the 1st index is::" + user[0]);
+            Console.WriteLine("the 1st index is::" + user[1]);
+            Console.WriteLine("the 1st index is::" + user[2]);
+            Console.WriteLine("the 1st index is:;" + user[3]);
+
+            //Insert the values
+            user.Insert(4, 5);
+            Console.WriteLine("inserted elements is" + user[4]);
+
+            //contains//Return the Boolean value
+            Console.WriteLine(user.Contains(2));
+
+            //Remove
+            Console.WriteLine(user.Remove(1));
+              Console.ReadKey();
+
+        }
+    }
+}
+==================================================================DICTIONARY==============================================================================
+  
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace csharpdictionary2
+{
+    class dictionary
+    {
+        static void Main(string[] args)
+        {
+            Dictionary<int, string> D = new Dictionary<int, string>();
+            D.Add(1, "Bangalore");
+            D.Add(2, "Mumbai");
+            D.Add(3, "Pune");
+            D.Add(4, "Hyderbad");
+            D.Add(5, "Chennai");
+            D.Add(6, "kolkata");
+            D.Add(7, "Ahmedabad");
+
+            foreach(KeyValuePair<int,string> x in D)
+            {
+                Console.WriteLine("All the elements are :" + x.Key + "" + x.Value);
+            }
+            Console.WriteLine("removing or popping 6 ele are");
+            D.Remove(1);
+            D.Remove(2);
+            D.Remove(3);
+            D.Remove(4);
+            D.Remove(5);
+            D.Remove(6);
+            foreach (KeyValuePair<int, string> x in D)
+            {
+                Console.WriteLine("Remainign elements are :" + x.Key + "" + x.Value);
+            }
+
+
+            ////we should push here
+            Console.WriteLine("pushing again ele");
+            D.Add(8, "Bangalore");
+            D.Add(9, "Mumbai");
+            D.Add(10, "Pune");
+            D.Add(11, "Hyderbad");
+            D.Add(12, "Chennai");
+            foreach (KeyValuePair<int, string> x in D)
+            {
+                Console.WriteLine("Remainign elements are :" + x.Key + "" + x.Value);
+            }
+            Console.WriteLine("again popping the 5 elemts");
+            D.Remove(7);
+            D.Remove(8);
+            D.Remove(9);
+            D.Remove(10);
+            D.Remove(11);
+            foreach (KeyValuePair<int, string> x in D)
+            {
+                Console.WriteLine("Remainign elements are :" + x.Key + "" + x.Value);
+            }
+            //pushing elemts again to the data
+            Console.WriteLine("pushing ele");
+            D.Add(13, "Kolakata");
+            D.Add(14, "Ahmebad");
+            D.Add(15, "Bangalore");
+            D.Add(16, "Mumbai");
+            foreach (KeyValuePair<int, string> x in D)
+            {
+                Console.WriteLine("Remainign elements are :" + x.Key + "" + x.Value);
+            }
+            Console.WriteLine("popping 4 times");
+            D.Remove(12);
+            D.Remove(13);
+            D.Remove(14);
+            D.Remove(15);
+            foreach (KeyValuePair<int, string> x in D)
+            {
+                Console.WriteLine("Remainign elements are :" + x.Key + "" + x.Value);
+            }
+            Console.WriteLine("pushing ele");
+            D.Add(17, "Pune");
+            D.Add(18, "hyderbad");
+            D.Add(19, "chennai");
+            foreach (KeyValuePair<int, string> x in D)
+            {
+                Console.WriteLine("Remainign elements are :" + x.Key + "" + x.Value);
+            }
+            Console.WriteLine("popping 3 times");
+            D.Remove(16);
+            D.Remove(17);
+            D.Remove(18);
+            foreach (KeyValuePair<int, string> x in D)
+            {
+                Console.WriteLine("Remainign elements are :" + x.Key + "" + x.Value);
+            }
+            Console.WriteLine("pushing here!!");
+            D.Add(20, "kolkata");
+            D.Add(21, "Ahemabad");
+            foreach (KeyValuePair<int, string> x in D)
+            {
+                Console.WriteLine("Remainign elements are :" + x.Key + "" + x.Value);
+            }
+            Console.WriteLine("popping 2 times");
+            D.Remove(19);
+            D.Remove(20);
+            foreach (KeyValuePair<int, string> x in D)
+            {
+                Console.WriteLine("Remainign elements are :" + x.Key + "" + x.Value);
+            }
+            Console.ReadKey();
+
+        }
+    }
+}
