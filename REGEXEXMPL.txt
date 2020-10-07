@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+using System.Threading.Tasks;
+
+namespace regularexpression
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //apply regex and find for match value. value =99, value = 55
+            //step1 : create a regex--object needs to be created.
+            Regex example = new Regex(@"\d+");
+            //find the digits present /match the string.
+            //step2: call the match on the Regex instance
+            Match match = example.Match("Abhigna98Abhigna");
+            Match Match = example.Match("a55a");
+            //step 3: test for validation/success
+            if (Match.Success)
+            {
+                Console.WriteLine("The match value of the digit is : " + match.Value);
+                Console.WriteLine("The match value of the digit is : " + Match.Value);
+                Console.WriteLine("pattern matched");
+                Console.ReadLine();
+            }
+==============================================================================
