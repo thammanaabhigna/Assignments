@@ -1,0 +1,471 @@
+====================window forms assignment 1=======================
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace assignmentwindows
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Button b = new Button();//object i.e, reference created
+            b.Text = "Click 1";//text implemented as click me on the button appearence
+            b.Size = new Size(100, 50);//size maintained for the button
+            b.Location = new Point(300, 150);//point located of the button created
+            this.Controls.Add(b);//controlling of button sholud go to the center
+                                 //show the message
+                                 //b.Click += new EventHandler(button1_Click1);
+                                 //DELEGATE WITH Anonymous Method
+            b.Click += delegate (object sender1, EventArgs e1)
+            {
+                MessageBox.Show("Hello World");
+
+            };
+        }
+            //private void button2_Click(object sender, EventArgs e)
+            //{
+            //    Button b = new Button();//object i.e, reference created
+            //    b.Text = "Click Me";//text implemented as click me on the button appearence
+            //    b.Size = new Size(100, 50);//size maintained for the button
+            //    b.Location = new Point(190, 150);//point located of the button created
+            //    this.Controls.Add(b);//controlling of button sholud go to the center
+            //                         //show the message
+            //                         //b.Click += new EventHandler(button1_Click1);
+            //                         //DELEGATE WITH Anonymous Method
+            //    b.Click += delegate (object sender1, EventArgs e1)
+            //    {
+            //        MessageBox.Show("Programming is Fun");
+
+            //    };
+            //}
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Button b = new Button();//object i.e, reference created
+            b.Text = "Click 2";//text implemented as click me on the button appearence
+            b.Size = new Size(100, 50);//size maintained for the button
+            b.Location = new Point(300, 150);//point located of the button created
+            this.Controls.Add(b);//controlling of button sholud go to the center
+                                 //show the message
+                                 //b.Click += new EventHandler(button1_Click1);
+                                 //DELEGATE WITH Anonymous Method
+            b.Click += delegate (object sender2, EventArgs e2)
+            {
+                MessageBox.Show("Programming is Fun");
+
+            };
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            Button b = new Button();//object i.e, reference created
+            b.Text = "Click 3";//text implemented as click me on the button appearence
+            b.Size = new Size(100, 50);//size maintained for the button
+            b.Location = new Point(300, 150);//point located of the button created
+            this.Controls.Add(b);//controlling of button sholud go to the center
+                                 //show the message
+                                 //b.Click += new EventHandler(button1_Click1);
+                                 //DELEGATE WITH Anonymous Method
+            b.Click += delegate (object sender3, EventArgs e3)
+            {
+                MessageBox.Show("This is Printing");
+
+            };
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Button b = new Button();//object i.e, reference created
+            b.Text = "Click 4";//text implemented as click me on the button appearence
+            b.Size = new Size(100, 50);//size maintained for the button
+            b.Location = new Point(300, 150);//point located of the button created
+            this.Controls.Add(b);//controlling of button sholud go to the center
+                                 //show the message
+                                 //b.Click += new EventHandler(button1_Click1);
+                                 //DELEGATE WITH Anonymous Method
+            b.Click += delegate (object sender4, EventArgs e4)
+            {
+                MessageBox.Show("This is Printing again");
+
+            };
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Button b = new Button();//object i.e, reference created
+            b.Text = "Click 5";//text implemented as click me on the button appearence
+            b.Size = new Size(100, 50);//size maintained for the button
+            b.Location = new Point(300, 150);//point located of the button created
+            this.Controls.Add(b);//controlling of button sholud go to the center
+                                 //show the message
+                                 //b.Click += new EventHandler(button1_Click1);
+                                 //DELEGATE WITH Anonymous Method
+            b.Click += delegate (object sender5, EventArgs e5)
+            {
+                MessageBox.Show("Yey! This is crazy");
+
+            };
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Button b = new Button();//object i.e, reference created
+            b.Text = "Click 6";//text implemented as click me on the button appearence
+            b.Size = new Size(100, 50);//size maintained for the button
+            b.Location = new Point(300, 150);//point located of the button created
+            this.Controls.Add(b);//controlling of button sholud go to the center
+                                 //show the message
+                                 //b.Click += new EventHandler(button1_Click1);
+                                 //DELEGATE WITH Anonymous Method
+            b.Click += delegate (object sender6, EventArgs e6)
+            {
+                MessageBox.Show("Yey! This is printing crazy");
+
+            };
+        }
+        //this.button1.Click += new.System.EventHandler(this.button1_Click);//delegate been created
+        //Method creation
+        //    private void button1_Click1(object sender1, EventArgs e1)
+        //{
+        //    MessageBox.Show("Today is THURSDAY!");
+        //}
+    }
+    }
+=========================================IN SEPERATE FORMS=====================
+==1==
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace assignmentwindows
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Button b = new Button();//object i.e, reference created
+            b.Text = "Click 1";//text implemented as click me on the button appearence
+            b.Size = new Size(100, 50);//size maintained for the button
+            b.Location = new Point(300, 150);//point located of the button created
+            this.Controls.Add(b);//controlling of button sholud go to the center
+                                 //show the message
+                                 //b.Click += new EventHandler(button1_Click1);
+                                 //DELEGATE WITH Anonymous Method
+            b.Click += delegate (object sender1, EventArgs e1)
+            {
+                MessageBox.Show("Hello World");
+
+            };
+        }
+            //private void button2_Click(object sender, EventArgs e)
+            //{
+            //    Button b = new Button();//object i.e, reference created
+            //    b.Text = "Click Me";//text implemented as click me on the button appearence
+            //    b.Size = new Size(100, 50);//size maintained for the button
+            //    b.Location = new Point(190, 150);//point located of the button created
+            //    this.Controls.Add(b);//controlling of button sholud go to the center
+            //                         //show the message
+            //                         //b.Click += new EventHandler(button1_Click1);
+            //                         //DELEGATE WITH Anonymous Method
+            //    b.Click += delegate (object sender1, EventArgs e1)
+            //    {
+            //        MessageBox.Show("Programming is Fun");
+
+            //    };
+            //}
+}}
+==2==
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace assignmentwindows
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+
+private void button2_Click_1(object sender, EventArgs e)
+        {
+            Button b = new Button();//object i.e, reference created
+            b.Text = "Click 2";//text implemented as click me on the button appearence
+            b.Size = new Size(100, 50);//size maintained for the button
+            b.Location = new Point(300, 150);//point located of the button created
+            this.Controls.Add(b);//controlling of button sholud go to the center
+                                 //show the message
+                                 //b.Click += new EventHandler(button1_Click1);
+                                 //DELEGATE WITH Anonymous Method
+            b.Click += delegate (object sender2, EventArgs e2)
+            {
+                MessageBox.Show("Programming is Fun");
+
+            };
+        }
+}
+}
+
+==3==
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace assignmentwindows
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+         private void button3_Click_1(object sender, EventArgs e)
+        {
+            Button b = new Button();//object i.e, reference created
+            b.Text = "Click 3";//text implemented as click me on the button appearence
+            b.Size = new Size(100, 50);//size maintained for the button
+            b.Location = new Point(300, 150);//point located of the button created
+            this.Controls.Add(b);//controlling of button sholud go to the center
+                                 //show the message
+                                 //b.Click += new EventHandler(button1_Click1);
+                                 //DELEGATE WITH Anonymous Method
+            b.Click += delegate (object sender3, EventArgs e3)
+            {
+                MessageBox.Show("This is Printing");
+
+            };
+
+        }
+}
+}
+
+
+==4==
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace assignmentwindows
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+private void button4_Click(object sender, EventArgs e)
+        {
+            Button b = new Button();//object i.e, reference created
+            b.Text = "Click 4";//text implemented as click me on the button appearence
+            b.Size = new Size(100, 50);//size maintained for the button
+            b.Location = new Point(300, 150);//point located of the button created
+            this.Controls.Add(b);//controlling of button sholud go to the center
+                                 //show the message
+                                 //b.Click += new EventHandler(button1_Click1);
+                                 //DELEGATE WITH Anonymous Method
+            b.Click += delegate (object sender4, EventArgs e4)
+            {
+                MessageBox.Show("This is Printing again");
+
+            };
+
+
+        }
+}
+}
+==5==
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace assignmentwindows
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Button b = new Button();//object i.e, reference created
+            b.Text = "Click 5";//text implemented as click me on the button appearence
+            b.Size = new Size(100, 50);//size maintained for the button
+            b.Location = new Point(300, 150);//point located of the button created
+            this.Controls.Add(b);//controlling of button sholud go to the center
+                                 //show the message
+                                 //b.Click += new EventHandler(button1_Click1);
+                                 //DELEGATE WITH Anonymous Method
+            b.Click += delegate (object sender5, EventArgs e5)
+            {
+                MessageBox.Show("Yey! This is crazy");
+
+            };
+        }
+}
+}
+==6==
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace assignmentwindows
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Button b = new Button();//object i.e, reference created
+            b.Text = "Click 6";//text implemented as click me on the button appearence
+            b.Size = new Size(100, 50);//size maintained for the button
+            b.Location = new Point(300, 150);//point located of the button created
+            this.Controls.Add(b);//controlling of button sholud go to the center
+                                 //show the message
+                                 //b.Click += new EventHandler(button1_Click1);
+                                 //DELEGATE WITH Anonymous Method
+            b.Click += delegate (object sender6, EventArgs e6)
+            {
+                MessageBox.Show("Yey! This is printing crazy");
+
+            };
+        }
+}
+}
+=========================================Assignment 2=====================
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace newWinformAss2
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+           
+
+            private void button1_Click(object sender, EventArgs e)
+            {
+                Button b = new Button();//object i.e, reference created
+                b.Text = "Click 1";//text implemented as click me on the button appearence
+                b.Size = new Size(100, 50);//size maintained for the button
+                b.Location = new Point(300, 150);//point located of the button created
+                this.Controls.Add(b);//controlling of button sholud go to the center
+                                     //show the message
+                                     //b.Click += new EventHandler(button1_Click1);
+                                     //DELEGATE WITH Anonymous Method
+                b.Click += delegate (object sender1, EventArgs e1)
+                {
+                    MessageBox.Show("Hello World");
+                   
+
+
+                };
+            b.Click += delegate (object sender2, EventArgs e2)
+            {
+                MessageBox.Show("Programming is Fun");
+
+
+
+            };
+            b.Click += delegate (object sender3, EventArgs e3)
+            {
+                MessageBox.Show("This is Printing");
+
+
+
+            };
+            b.Click += delegate (object sender4, EventArgs e4)
+            {
+                MessageBox.Show("This is Printing again");
+
+
+
+            };
+            b.Click += delegate (object sender5, EventArgs e5)
+            {
+                MessageBox.Show("Yey!This is Crazy");
+
+
+
+            };
+            b.Click += delegate (object sender6, EventArgs e6)
+            {
+                MessageBox.Show("Yey!This is printing Crazy");
+
+
+
+            };
+        }
+            
+    }
+    }
