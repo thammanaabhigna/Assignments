@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>events</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("p").click(function () {
+                $(this).hide();
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("h1").dblclick(function () {
+                $(this).hide();
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("h2").mousedown(function () {
+                alert("It is mousedown")
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#hid").mouseup(function () {
+                alert("It is mouseup")
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("h3").mouseenter(function () {
+                alert("This is mouseenter");
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("h4").mouseleave(function () {
+                alert("events are fun")
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("input").focus(function () {
+                $(this).css("background-color", "cyan");
+            });
+
+
+            $("input").blur(function () {
+                $(this).css("background-color", "red");
+            });
+
+            $("input").submit(function () {
+                $(this).css("background-color", "yellow");
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#i1").keydown(function () {
+                $("#i1").css("background-color", "yellow");
+            });
+            $("#i1").keyup(function () {
+                $("#i1").css("background-color", "pink");
+            });
+
+
+            var i = 0;
+
+            $("#i1").keypress(function () {
+                $("span").text(i += 1);
+            });
+        });
+    </script>
+    <script>
+        var x = 0;
+        $(document).ready(function () {
+            $("div").scroll(function () {
+                $("#s1").text(x += 1);
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("window").unload(function () {
+                alert("Goodbye!");
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("img").load(function () {
+                alert("Image loaded.");
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#i1").change(function () {
+                alert("The text has been changed.");
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("form").submit(function () {
+                alert("Submitted");
+            });
+        });
+    </script>
+</head>
+<body>
+    <p>Keypressed: <span>0</span></p>
+    <p>Hello World</p>
+    <h1>This is Jquery events</h1>
+    <h1 id="hid">mouseup here</h1>
+    <h2>this is understood</h2>
+    <h3>this is fun</h3>
+    <h4>yes it is working</h4>
+    Name: <input type="text" name="FullName" />
+
+    Email:<input id="i1" type="text" />
+    <form action="">
+        number:<input type="text" />
+        <input id="i2" type="submit" value="submit" />
+    </form>
+    <p>using scrollbar</p>
+
+    <div style="border:1px solid black;width:200px;height:100px;overflow:scroll;">
+        This is my dxc training. Iam learning asp.net and as part of that today I am learning Jquery Events. It is fun and I am loving it. Thank you.
+        <br><br>
+        As part of training today I am implementing scrolldown event
+        <br><br>
+        It worked well.
+    </div>
+
+    <p>Scrolled <span id="s1">0</span> times.</p>
+    
+   
+</body>
+</html>
