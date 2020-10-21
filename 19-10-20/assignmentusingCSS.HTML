@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title> assignment using CSS</title>
+    <style>
+        .f1 {
+            width: 200px;
+            height: 40px;
+            border: dashed;
+            color: lightpink;
+            background-color: yellow;
+            padding: 4px;
+            font-family: 'Franklin Gothic';
+            font-weight:bolder;
+            font-style: italic;
+        }
+
+        .f2 {
+            width: 200px;
+            height: 40px;
+            border: dashed;
+            color: goldenrod;
+            background-color: green;
+            padding: 4px;
+            font-family: 'Times New Roman';
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .f3 {
+            width: 200px;
+            height: 40px;
+            border: dashed;
+            color:palevioletred;
+            background-color: whitesmoke;
+            padding: 4px;
+            font-family: Arial;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .f4 {
+            width: 200px;
+            height: 40px;
+            border: dashed;
+            color: forestgreen;
+            background-color: cyan;
+            padding: 4px;
+            font-family: Calibri;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .f5 {
+            width: 200px;
+            height: 40px;
+            border: dashed;
+            color: cyan;
+            background-color: deeppink;
+            padding: 4px;
+            font-family: Algerian;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .f6 {
+            width: 200px;
+            height: 40px;
+            border: dashed;
+            color: moccasin;
+            background-color: yellow;
+            padding: 4px;
+            font-family: 'Bell MT';
+            font-weight: bold;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="btn">Hello World</h1>
+
+    <h2 id="btn1">Hello World</h2>
+    <h3 id="btn2">Hello World</h3>
+    <h4 id="btn3">Hello World</h4>
+    <h5 id="btn4">Hello World</h5>
+    <h6 id="btn5">Hello World</h6>
+
+    <button id="h1" onclick="mybtn()">click me</button>
+    <p>after performing the required operations the button gets disabled</p>
+
+    <script>
+        function mybtn() {
+            document.getElementById("h1").disabled = true;
+            alert("button disabled");
+            document.getElementById("btn").className = "f1";
+            document.getElementById("btn1").className = "f2";
+            document.getElementById("btn2").className = "f3";
+            document.getElementById("btn3").className = "f4";
+            document.getElementById("btn4").className = "f5";
+            document.getElementById("btn5").className = "f6";
+            //click again to disable the button
+
+
+        }
+    </script>
+
+</body>
+
+</html>

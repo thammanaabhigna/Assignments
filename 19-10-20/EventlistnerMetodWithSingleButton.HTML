@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Second WebTab</title>
+</head>
+<body>
+    <h2> JavaScript EventListerMethod</h2>
+    <p>EventListenerMethod to two clicks on single button</p>
+    <button id="Black">Click Me</button>
+    <script>
+        var x = document.getElementById("Black")
+        x.addEventListener("click", variable);
+        x.addEventListener("click", variable1);
+        x.addEventListener("click", variable2);
+
+        function variable() {
+            alert("this is a");
+            alert("ok!got");
+            console.log("We are good to go");
+        }
+        function variable1() {
+            alert("This is b ");
+            alert("alright!");
+            console.log("We are good to go");
+        }
+        function variable2() {
+            alert("this is c");
+            alert("that's great");
+            console.log("We are good to go");
+        }
+
+    </script>
+
+</body>
+</html>

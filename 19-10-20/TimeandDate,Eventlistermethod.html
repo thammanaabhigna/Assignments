@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>My first webTab</title>
+</head>
+<body>
+    <h1>Click on HelloWorld,it displays something new</h1>
+    <h1 onclick="this.innerHTML='Welcome to JavaScript'">HelloWorld</h1>
+    <h2 onclick="Html(this)">HelloWorld</h2>
+    <h3 onclick="Html1(this)">HelloWorld</h3>
+    <h4 onclick="HTML2(this)">HelloWorld</h4>
+    <h5 onclick="HTML3(this)">HelloWorld</h5>
+    <h6 onclick="HTML4(this)">HelloWorld</h6>
+    <!--<h3 onclick="extraevent1(this)">HelloWorld</h3>
+    <h3 onclick="extraevent2(this)">HelloWorld</h3>
+    <h3 onclick="extraevent3(this)">HelloWorld</h3>
+    <h3 onclick="extraevent4(this)">HelloWorld</h3>-->
+    !--Function implementation
+    <script>
+        function Html(id) {
+            id.innerHTML = "Welcome to other way of function  implementaion"
+        }
+        function HTML2(id) {
+            id.innerHTML = "learning javascript DOM"
+        }
+        function HTML3(id) {
+            id.innerHTML = " javascript FOUND EASY TO LEARN"
+        }
+        function HTML4(id) {
+            id.innerHTML = "THIS IS FUN"
+        }
+        function displayDate() {
+
+            document.getElementById("time").innerHTML = Date();
+            //document.write("demo");write and etelement by id  works the same
+            //document.console("demo");
+            //document.alert("demo"); canbe used for the popup
+
+        }
+
+        function extraevent1(colour) {
+            colour.innerHTML = "This is crazy";
+        }
+        function extraevent2(colour) {
+            colour.innerHTML = "Mouse over me";
+        }
+        function extraevent3(colour) {
+            colour.innerHTML = "I understood this";
+        }
+        function extraevent4(colour) {
+            colour.innerHTML = "I worked on it";
+        }
+        document.getElementById("white").addEventListener("click", function () {
+            alert("This is EventLister method example");
+        });
+    </script>
+    <div onmouseover=extraevent(this) onmouseout=" extraevent2(this)"
+         style="background-color:aqua" ; width:60% ;height:100% ;padding:80px ;fontsize:80px>
+        show me up
+
+    </div>
+    <div onmousedown=extraevent3(this) onmouseup=" extraevent4(this)"
+         style="background-color:gold" ; width="10%" ;height="50%" ;padding="40PX" ;fontsize="50px">
+        MY TRY
+
+    </div>
+    
+    <button id="object ">Click_Again</button>
+    <script>
+    <p>This is demo EventListner with an explicit function</p>
+   
+        document.getElementById("object").addEventListener("click", example());
+        
+        function example() {
+            alert("THIS IS ABOUT EVENTLISTER METHOD");
+            document.write("This demo is about EventListerMethod and write console");
+            console.log("This demo is about EventLissterMethod");
+
+        }
+        
+    </script>
+    <p> Click here for Date and Time </p>
+    <button onclick="displayDate()">The date and time is  </button>
+    <p id="time"> </p>
+
+
+</body>
+</html>
