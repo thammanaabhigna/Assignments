@@ -1,0 +1,103 @@
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        <h1>Student Registration Form</h1>
+        @using (Html.BeginForm("Index", "Registration"))
+        {
+        <table>
+            <tr>
+                <td>
+                    username: @Html.TextBox("txtbx")
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    password: @Html.Password("paswrd")
+                </td>
+                <
+            </tr>
+            <tr>
+            <td>
+                Gender:
+                <label>Male</label>@Html.RadioButton("Gender", "Male", true, new { id = "male" })
+                <label>Female</label>@Html.RadioButton("Gender", "Female", true, new { id = "female" })
+
+            </td>
+            </tr>
+            <tr>
+                <td>
+                    Address : @Html.TextArea("Address", new { columns = 20, rows = 5 })
+                </td>
+            </tr>
+            <tr>
+
+                <td>
+                    Hobbies:
+                    <br />
+                    @Html.CheckBox("chckbx1")<label>Drawing/Painting</label>
+                    <br />
+                    @Html.CheckBox("chckbx2")<label>Dancing</label>
+                    <br />
+                    @Html.CheckBox("chckbx3")<label>Singing</label>
+                    <br />
+                    @Html.CheckBox("chckbx4")<label>crptography</label>
+                    <br />
+                    @Html.CheckBox("chckbx5")<label>Reading books</label>
+                    <br />
+                    @Html.CheckBox("chckbx6")<label>badminton</label>
+                    <br />
+                    @Html.CheckBox("chckbx7")<label>craftworks</label>
+                    <br />
+                    @Html.CheckBox("chckbx8")<label>swimming</label>
+                    <br />
+                    @Html.CheckBox("chckbx9")<label>Modeling</label>
+                    <br />
+                    @Html.CheckBox("chckbx10")<label>travelling</label>
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Branch:@Html.DropDownList("branch", new List<SelectListItem>
+                      {
+                          new SelectListItem{Text= "choose your branch"},
+                            new SelectListItem{Text= "CSE"},
+                              new SelectListItem{Text= "ECE"},
+                                new SelectListItem{Text= "EEE"},
+                                  new SelectListItem{Text= "IT"},
+                              
+                      })
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Skills:@Html.DropDownList("skills",new List<SelectListItem>
+                      {
+                          new SelectListItem{Text="your skills" },
+                          new SelectListItem{Text="techical skills" },
+                          new SelectListItem{Text="presentations skills" },
+                          new SelectListItem{Text="communication skills" },
+                          new SelectListItem{Text="Programming skills" },
+                      })
+                </td>
+            </tr>
+            <tr>
+                <td><button>Submit</button></td>
+            </tr>
+
+        </table>
+        }
+    </div>
+</body>
+</html>
