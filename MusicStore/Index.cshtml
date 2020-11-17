@@ -1,0 +1,156 @@
+
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>MUSIC STORE</title>
+</head>
+<body>
+    <div class="container">
+
+        <table class=" table table-lg ">
+            <thead>
+                <tr style="background-color:chartreuse" >
+                    <th>Registration Form For MusicStore  </th>
+                    
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    @*<th>Music type</th>*@
+                   
+        @*<th>singer</th>
+        @*<th>songs</th>*@*@*@*@
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+
+                    <td>
+                        <form>
+
+                            <div class="form-group">
+                                <label for="email"><b>Email:</b></label>
+                                <input type="email" class="form-control" placeholder="Enter email" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="pwd"><b>Password:</b></label>
+                                <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+                            </div>
+                            <div class="form-group form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox"> Save Password
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="mblno"><b>MobileNumber:</b></label>
+                                <input type="Mobile Number" class="form-control" placeholder="Enter Mobile Number" id="mblno">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </td>
+                    <td>
+                        <div class="container">
+
+                            <table class="table table-bordered ">
+                                <th>
+                                    <p style="background-color:chartreuse">Music Styles</p>
+                                    <p><a href="classic music " class="btn btn-primary">Classic Music</a></p>
+                                    <p><a href="Pop music" class="btn btn-primary">Pop Music</a></p>
+                                    <p><a href="Folk music" class="btn btn-primary">Flok Music</a></p>
+                                    <p><a href="Rock music" class="btn btn-primary">Rock Music</a></p>
+
+                                </th>
+
+                            </table>
+                        </div>
+
+
+                    </td>
+                    <td>
+                        <div class="table table-bordered">
+                    <th>
+                        <p style="background-color:chartreuse">Select Your Languages</p>
+                        <label class="form-check-label">
+
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" value="">Hindi
+                            </label>
+                            <br />
+                            <br />
+
+                            <input type="checkbox" class="form-check-input" value="">Telugu
+                        </label>
+                        <br />
+
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="" />English
+                        </label>
+
+                        <br />
+
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" value="" />Tamil
+                        </label>
+                        <br />
+                    </th>
+                        </div>
+                    </td>
+    <td>
+        <div class="table table-bordered">
+            <th>
+                <p style="background-color:chartreuse">Select Your choice</p>
+                <label class="form-check-label">
+
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" value="" />Subscription to MusicStore
+                    </label>
+                    <br />
+                    <br />
+
+                    <input type="radio" class="form-check-input" value="">30 Days Free Trail
+                </label>
+                <br />
+
+    </td>
+                    &nbsp;
+                    &nbsp;
+                    <br />
+                    <br /><br />
+                    <td>
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                Select
+                            </button>
+                            <div class="dropdown-menu">
+                                <a style="font-style:italic" class="dropdown-item" href="#">Atif Aslam</a>
+                                <a style="font-style:italic" class="dropdown-item" href="#">Shreya Goshal</a>
+                                <a style="font-style:italic" class="dropdown-item" href="#">Arjith Singh</a>
+                                <a style="font-style:italic" class="dropdown-item" href="#">SiD Sriram</a>
+                                <a style="font-style:italic" class="dropdown-item" href="#">Anurag Kulkarni</a>
+                                <a style="font-style:italic" class="dropdown-item" href="#">Geetha Madhuri</a>
+                                <a style="font-style:italic" class="dropdown-item" href="#">Devisri Prasad</a>
+                                <a style="font-style:italic" class="dropdown-item" href="#">Mickey J Meyar</a>
+                                <a style="font-style:italic" class="dropdown-item" href="#">A R Rehman</a>
+                                <a style="font-style:italic" class="dropdown-item" href="#">Chinmayi</a>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
